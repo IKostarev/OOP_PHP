@@ -7,3 +7,6 @@ $worker->work();
 
 $visitor = new App\Visitor();
 $visitor->visit();
+
+$develop = new App\Developer("ilya", 16, [8, 8, 8]);
+$develop->work();
