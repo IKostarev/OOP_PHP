@@ -8,6 +8,10 @@ class Worker
     public int $age;
     public array $hours;
 
+    protected string $position;
+
+    private string $positionFuture; // РАБОТАЕТ ТОЛЬКО В ЭТОМ КЛАССЕ
+
     public function __construct($name, $age, $hours)
     {
         $this->name = $name;
