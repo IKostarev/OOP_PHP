@@ -10,3 +10,6 @@ $visitor->visit();
 
 $develop = new App\Developer("ilya", 16, [8, 8, 8]);
 $develop->work();
+
+$develop->setPosition("developer");
+var_dump($develop->getPosition());

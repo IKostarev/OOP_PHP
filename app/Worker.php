@@ -4,11 +4,11 @@ namespace App;
 
 class Worker
 {
-    public string $name;
-    public int $age;
-    public array $hours;
+    private string $name;
+    private int $age;
+    private array $hours;
 
-    protected string $position;
+    private string $position;
 
     private string $positionFuture; // РАБОТАЕТ ТОЛЬКО В ЭТОМ КЛАССЕ
 
@@ -22,5 +22,15 @@ class Worker
     public function work()
     {
         print_r("\n Hello, i'm worker!!! \n");
+    }
+
+    public function setPosition($value)
+    {
+        $this->position = $value;
+    }
+
+    public function getPosition(): string
+    {
+        return $this->position;
     }
 }
