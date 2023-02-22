@@ -15,3 +15,11 @@ $develop->setPosition("developer");
 var_dump($develop->getPosition());
 
 $develop->rest();
+
+$salary = \App\Salary::count($develop->getHours());
+var_dump($salary);
+
+var_dump(\App\Salary::$totalHours);
+
+$salaryObj = new \App\Salary();
+var_dump($salaryObj::$totalHours);

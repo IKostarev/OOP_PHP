@@ -38,4 +38,9 @@ abstract class Worker implements WorkerInterface
     {
         return $this->name;
     }
+
+    public function getHours(): array
+    {
+        return $this->hours;
+    }
 }
