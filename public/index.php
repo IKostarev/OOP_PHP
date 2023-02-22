@@ -2,8 +2,8 @@
 
 require_once ('./vendor/autoload.php');
 
-$worker = new App\Worker("It's name", 10, [0, 2, 8, 8]);
-$worker->work();
+// $worker = new App\Worker("It's name", 10, [0, 2, 8, 8]);
+// $worker->work();
 
 $visitor = new App\Visitor();
 $visitor->visit();
@@ -13,3 +13,5 @@ $develop->work();
 
 $develop->setPosition("developer");
 var_dump($develop->getPosition());
+
+$develop->rest();

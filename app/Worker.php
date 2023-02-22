@@ -33,4 +33,9 @@ abstract class Worker implements WorkerInterface
     {
         return $this->position;
     }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
 }
