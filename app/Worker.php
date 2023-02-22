@@ -2,7 +2,7 @@
 
 namespace App;
 
-abstract class Worker
+abstract class Worker implements WorkerInterface
 {
     private string $name;
     private int $age;
@@ -10,7 +10,7 @@ abstract class Worker
 
     private string $position;
 
-    private string $positionFuture; // РАБОТАЕТ ТОЛЬКО В ЭТОМ КЛАССЕ
+    private string $positionFuture;
 
     public function __construct($name, $age, $hours)
     {
@@ -33,6 +33,4 @@ abstract class Worker
     {
         return $this->position;
     }
-
-    abstract public function chiller();
 }
