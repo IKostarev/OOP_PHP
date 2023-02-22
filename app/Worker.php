@@ -2,7 +2,7 @@
 
 namespace App;
 
-class Worker
+abstract class Worker
 {
     private string $name;
     private int $age;
@@ -33,4 +33,6 @@ class Worker
     {
         return $this->position;
     }
+
+    abstract public function chiller();
 }
